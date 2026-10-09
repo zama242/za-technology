@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Monogramme ZA Technology : lettres géométriques construites, le point or partagé avec CHANTAL. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E2029"/>
+      <stop offset="1" stop-color="#0B0C10"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D9DCE3"/>
+    </linearGradient>
+    <radialGradient id="gold" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FFD54A"/>
+      <stop offset="1" stop-color="#F2A900"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <g id="mark" fill="url(#metal)">
+    <!-- Z -->
+    <path d="M125 288 H405 V368 L213 656 H405 V736 H125 V656 L317 368 H125 Z"/>
+    <!-- A (sans barre : forme Λ, plus moderne) -->
+    <path fill-rule="evenodd" d="M608 288 H694 L822 736 H734 L651 445.5 L568 736 H480 Z"/>
+  </g>
+  <circle cx="870" cy="706" r="30" fill="url(#gold)"/>
+</svg>

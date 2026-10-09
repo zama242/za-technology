@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Icône CHANTAL : un « C » ouvert comme un signal, la pastille LIVE or du Congo dans l'ouverture. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EE3A52"/>
+      <stop offset="0.55" stop-color="#D7263D"/>
+      <stop offset="1" stop-color="#9E1A2C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.22" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gold" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FFD54A"/>
+      <stop offset="1" stop-color="#F2A900"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#glow)"/>
+  <g id="symbol">
+    <path d="M 718.8 338.4 A 270 270 0 1 0 718.8 685.6" fill="none" stroke="#FFFFFF" stroke-width="124" stroke-linecap="round"/>
+    <circle cx="742" cy="512" r="74" fill="url(#gold)"/>
+  </g>
+</svg>

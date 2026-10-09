@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZA Technology — Solutions numériques au Congo</title>
+  <meta name="description" content="ZA Technology conçoit à Brazzaville des applications pensées pour le Congo : CHANTAL, le commerce en direct, et BENI, le portefeuille mobile.">
+  <meta property="og:title" content="ZA Technology">
+  <meta property="og:description" content="Des solutions numériques pensées pour le Congo.">
+  <meta property="og:image" content="assets/og-za.png">
+  <meta name="theme-color" content="#0B0C10">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiPgogIDwhLS0gTW9ub2dyYW1tZSBaQSBUZWNobm9sb2d5IDogbGV0dHJlcyBnw6lvbcOpdHJpcXVlcyBjb25zdHJ1aXRlcywgbGUgcG9pbnQgb3IgcGFydGFnw6kgYXZlYyBDSEFOVEFMLiAtLT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMUUyMDI5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBCMEMxMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibWV0YWwiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZGRkZGIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0Q5RENFMyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ29sZCIgY3g9IjAuMzUiIGN5PSIwLjMiIHI9IjAuOCI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGRDU0QSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGMkE5MDAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9InVybCgjYmcpIi8+CiAgPGcgaWQ9Im1hcmsiIGZpbGw9InVybCgjbWV0YWwpIj4KICAgIDwhLS0gWiAtLT4KICAgIDxwYXRoIGQ9Ik0xMjUgMjg4IEg0MDUgVjM2OCBMMjEzIDY1NiBINDA1IFY3MzYgSDEyNSBWNjU2IEwzMTcgMzY4IEgxMjUgWiIvPgogICAgPCEtLSBBIChzYW5zIGJhcnJlIDogZm9ybWUgzpssIHBsdXMgbW9kZXJuZSkgLS0+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02MDggMjg4IEg2OTQgTDgyMiA3MzYgSDczNCBMNjUxIDQ0NS41IEw1NjggNzM2IEg0ODAgWiIvPgogIDwvZz4KICA8Y2lyY2xlIGN4PSI4NzAiIGN5PSI3MDYiIHI9IjMwIiBmaWxsPSJ1cmwoI2dvbGQpIi8+Cjwvc3ZnPgo=" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0B0C10;
+      --ink-2: #1E2029;
+      --paper: #FAF7F4;
+      --card: #FFFFFF;
+      --text: #1B1C22;
+      --muted: #5C5F6B;
+      --line: #E7E2DC;
+      --gold: #F2A900;
+      --gold-2: #FFD54A;
+      --red: #D7263D;
+      --green: #1E9E5A;
+      --radius: 20px;
+      --wrap: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--paper); color: var(--text);
+      font-family: Montserrat, system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6; -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    img, svg { display: block; max-width: 100%; }
+    .wrap { width: min(var(--wrap), 100% - 32px); margin-inline: auto; }
+
+    /* ── En-tête ── */
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(11, 12, 16, .88); backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; }
+    .brand img { width: 38px; height: 38px; border-radius: 10px; }
+    .brand b { font-weight: 800; letter-spacing: .04em; }
+    .brand span { font-weight: 500; letter-spacing: .32em; font-size: 12px; opacity: .75; }
+    nav { display: flex; gap: 28px; }
+    nav a { color: #C9CBD3; text-decoration: none; font-weight: 600; font-size: 14px; }
+    nav a:hover { color: #fff; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px; text-decoration: none;
+      font-weight: 700; font-size: 15px; padding: 14px 22px; border-radius: 999px; transition: transform .15s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-gold { background: var(--gold); color: var(--ink); }
+    .btn-ghost { border: 1.5px solid rgba(255,255,255,.25); color: #fff; }
+    .btn-wa { background: #1FAF57; color: #fff; }
+
+    /* ── Accueil ── */
+    .hero { background: radial-gradient(1200px 500px at 85% -10%, #2a2d3a 0%, transparent 60%), linear-gradient(180deg, var(--ink-2), var(--ink)); color: #fff; overflow: hidden; }
+    .hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; padding: 96px 0 104px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-2); }
+    .eyebrow::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 4px rgba(242,169,0,.18); }
+    h1 { font-size: clamp(36px, 5.4vw, 60px); line-height: 1.08; font-weight: 900; margin: 18px 0 20px; letter-spacing: -.02em; }
+    h1 em { font-style: normal; color: var(--gold); }
+    .lead { font-size: 18px; color: #C9CBD3; max-width: 34em; margin: 0 0 32px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 14px; }
+    .mark { position: relative; justify-self: center; width: min(360px, 80vw); aspect-ratio: 1; }
+    .mark img { width: 100%; height: 100%; border-radius: 28%; box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.06); }
+    .mark::after { content: ""; position: absolute; inset: -18%; border-radius: 50%; background: radial-gradient(circle, rgba(242,169,0,.16), transparent 60%); z-index: -1; }
+
+    /* ── Sections ── */
+    section { padding: 88px 0; }
+    .head { max-width: 640px; margin-bottom: 44px; }
+    .head .eyebrow { color: #B07A00; }
+    h2 { font-size: clamp(28px, 3.6vw, 40px); line-height: 1.15; font-weight: 800; margin: 12px 0 14px; letter-spacing: -.01em; }
+    .head p { color: var(--muted); font-size: 17px; margin: 0; }
+
+    .products { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .product { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; display: flex; flex-direction: column; gap: 18px; }
+    .product-top { display: flex; align-items: center; gap: 16px; }
+    .product-top img, .beni-icon { width: 64px; height: 64px; border-radius: 18px; flex: none; }
+    .beni-icon { display: grid; place-items: center; font-weight: 900; font-size: 26px; color: #fff; background: linear-gradient(135deg, #009543 0 40%, #FBDE4A 40% 60%, #DC241F 60%); }
+    .product h3 { margin: 0; font-size: 24px; font-weight: 800; }
+    .tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; margin-top: 4px; }
+    .tag-live { background: #FDE8EB; color: var(--red); }
+    .tag-soon { background: #EEF0F4; color: var(--muted); }
+    .product p { margin: 0; color: var(--muted); }
+    .product ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    .product li { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; }
+    .product li::before { content: ""; flex: none; width: 8px; height: 8px; margin-top: 8px; border-radius: 50%; background: var(--gold); }
+    .product.chantal { border-top: 4px solid var(--red); }
+    .product.beni { border-top: 4px solid var(--green); }
+
+    .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .value { padding: 28px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); }
+    .value .num { font-size: 13px; font-weight: 800; color: #B07A00; letter-spacing: .1em; }
+    .value h3 { margin: 10px 0 8px; font-size: 19px; font-weight: 800; }
+    .value p { margin: 0; color: var(--muted); font-size: 15px; }
+
+    .about { background: var(--ink); color: #fff; }
+    .about .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .about .head { margin: 0; }
+    .about .head p { color: #C9CBD3; }
+    .about .head .eyebrow { color: var(--gold-2); }
+    .quote { border-left: 4px solid var(--gold); padding: 8px 0 8px 24px; font-size: 20px; font-weight: 600; line-height: 1.5; color: #E9EAEE; }
+    .quote small { display: block; margin-top: 14px; font-size: 14px; font-weight: 500; color: #9A9DA8; }
+
+    .contact { text-align: center; }
+    .contact .head { margin-inline: auto; }
+    .contact .actions { justify-content: center; }
+    .contact .btn-ghost { color: var(--text); border-color: var(--line); background: var(--card); }
+
+    footer { border-top: 1px solid var(--line); padding: 32px 0; font-size: 14px; color: var(--muted); }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 32px; justify-content: space-between; align-items: center; }
+    footer nav { gap: 20px; flex-wrap: wrap; }
+    footer nav a { color: var(--muted); font-weight: 500; }
+
+    @media (max-width: 860px) {
+      nav.main { display: none; }
+      .hero .wrap, .about .wrap { grid-template-columns: 1fr; }
+      .hero .wrap { padding: 64px 0 72px; text-align: left; }
+      .mark { order: -1; width: 160px; justify-self: start; }
+      .products, .values { grid-template-columns: 1fr; }
+      section { padding: 64px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="#">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiPgogIDwhLS0gTW9ub2dyYW1tZSBaQSBUZWNobm9sb2d5IDogbGV0dHJlcyBnw6lvbcOpdHJpcXVlcyBjb25zdHJ1aXRlcywgbGUgcG9pbnQgb3IgcGFydGFnw6kgYXZlYyBDSEFOVEFMLiAtLT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMUUyMDI5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBCMEMxMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibWV0YWwiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZGRkZGIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0Q5RENFMyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ29sZCIgY3g9IjAuMzUiIGN5PSIwLjMiIHI9IjAuOCI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGRDU0QSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGMkE5MDAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9InVybCgjYmcpIi8+CiAgPGcgaWQ9Im1hcmsiIGZpbGw9InVybCgjbWV0YWwpIj4KICAgIDwhLS0gWiAtLT4KICAgIDxwYXRoIGQ9Ik0xMjUgMjg4IEg0MDUgVjM2OCBMMjEzIDY1NiBINDA1IFY3MzYgSDEyNSBWNjU2IEwzMTcgMzY4IEgxMjUgWiIvPgogICAgPCEtLSBBIChzYW5zIGJhcnJlIDogZm9ybWUgzpssIHBsdXMgbW9kZXJuZSkgLS0+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02MDggMjg4IEg2OTQgTDgyMiA3MzYgSDczNCBMNjUxIDQ0NS41IEw1NjggNzM2IEg0ODAgWiIvPgogIDwvZz4KICA8Y2lyY2xlIGN4PSI4NzAiIGN5PSI3MDYiIHI9IjMwIiBmaWxsPSJ1cmwoI2dvbGQpIi8+Cjwvc3ZnPgo=" alt="">
+        <div><b>ZA</b> <span>TECHNOLOGY</span></div>
+      </a>
+      <nav class="main">
+        <a href="#produits">Nos produits</a>
+        <a href="#approche">Notre approche</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Brazzaville · République du Congo</span>
+          <h1>Des solutions numériques <em>pensées pour le Congo.</em></h1>
+          <p class="lead">ZA Technology conçoit des applications simples et fiables, adaptées à la façon dont les Congolais achètent, vendent et paient : au téléphone, avec le Mobile Money, en toute confiance.</p>
+          <div class="actions">
+            <a class="btn btn-gold" href="#produits">Découvrir nos produits</a>
+            <a class="btn btn-ghost" href="#contact">Nous contacter</a>
+          </div>
+        </div>
+        <div class="mark"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiPgogIDwhLS0gTW9ub2dyYW1tZSBaQSBUZWNobm9sb2d5IDogbGV0dHJlcyBnw6lvbcOpdHJpcXVlcyBjb25zdHJ1aXRlcywgbGUgcG9pbnQgb3IgcGFydGFnw6kgYXZlYyBDSEFOVEFMLiAtLT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMUUyMDI5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBCMEMxMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibWV0YWwiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZGRkZGIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0Q5RENFMyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ29sZCIgY3g9IjAuMzUiIGN5PSIwLjMiIHI9IjAuOCI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGRDU0QSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGMkE5MDAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9InVybCgjYmcpIi8+CiAgPGcgaWQ9Im1hcmsiIGZpbGw9InVybCgjbWV0YWwpIj4KICAgIDwhLS0gWiAtLT4KICAgIDxwYXRoIGQ9Ik0xMjUgMjg4IEg0MDUgVjM2OCBMMjEzIDY1NiBINDA1IFY3MzYgSDEyNSBWNjU2IEwzMTcgMzY4IEgxMjUgWiIvPgogICAgPCEtLSBBIChzYW5zIGJhcnJlIDogZm9ybWUgzpssIHBsdXMgbW9kZXJuZSkgLS0+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02MDggMjg4IEg2OTQgTDgyMiA3MzYgSDczNCBMNjUxIDQ0NS41IEw1NjggNzM2IEg0ODAgWiIvPgogIDwvZz4KICA8Y2lyY2xlIGN4PSI4NzAiIGN5PSI3MDYiIHI9IjMwIiBmaWxsPSJ1cmwoI2dvbGQpIi8+Cjwvc3ZnPgo=" alt="Logo ZA Technology"></div>
+      </div>
+    </div>
+
+    <section id="produits">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">Nos produits</span>
+          <h2>Deux applications, un même objectif : faciliter le quotidien.</h2>
+          <p>Chaque produit part d'un vrai besoin local et se construit avec ses premiers utilisateurs.</p>
+        </div>
+        <div class="products">
+          <article class="product chantal">
+            <div class="product-top">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiPgogIDwhLS0gSWPDtG5lIENIQU5UQUwgOiB1biDCqyBDIMK7IG91dmVydCBjb21tZSB1biBzaWduYWwsIGxhIHBhc3RpbGxlIExJVkUgb3IgZHUgQ29uZ28gZGFucyBsJ291dmVydHVyZS4gLS0+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0VFM0E1MiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNTUiIHN0b3AtY29sb3I9IiNENzI2M0QiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOUUxQTJDIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnbG93IiBjeD0iMC4zIiBjeT0iMC4yMiIgcj0iMC43NSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGRkZGRiIgc3RvcC1vcGFjaXR5PSIwLjIyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGRkZGRiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnb2xkIiBjeD0iMC4zNSIgY3k9IjAuMyIgcj0iMC44Ij4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZENTRBIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0YyQTkwMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEwMjQiIGhlaWdodD0iMTAyNCIgZmlsbD0idXJsKCNiZykiLz4KICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiBmaWxsPSJ1cmwoI2dsb3cpIi8+CiAgPGcgaWQ9InN5bWJvbCI+CiAgICA8cGF0aCBkPSJNIDcxOC44IDMzOC40IEEgMjcwIDI3MCAwIDEgMCA3MTguOCA2ODUuNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjEyNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8Y2lyY2xlIGN4PSI3NDIiIGN5PSI1MTIiIHI9Ijc0IiBmaWxsPSJ1cmwoI2dvbGQpIi8+CiAgPC9nPgo8L3N2Zz4K" alt="Icône CHANTAL">
+              <div>
+                <h3>CHANTAL</h3>
+                <span class="tag tag-live">● Pilote en cours à Brazzaville</span>
+              </div>
+            </div>
+            <p>La marketplace congolaise où l'on découvre, regarde et achète en direct. Les vendeurs présentent leurs produits en vidéo LIVE, et les clients achètent sans quitter le direct.</p>
+            <ul>
+              <li>Boutique gratuite pour les commerçants, artisans et particuliers</li>
+              <li>Live Shopping : produit épinglé, offres LIVE à durée limitée</li>
+              <li>Paiement MTN Mobile Money, Airtel Money ou à la livraison</li>
+              <li>Argent protégé jusqu'à la livraison, avis vérifiés</li>
+            </ul>
+          </article>
+          <article class="product beni">
+            <div class="product-top">
+              <div class="beni-icon" aria-hidden="true">B</div>
+              <div>
+                <h3>BENI</h3>
+                <span class="tag tag-soon">En préparation</span>
+              </div>
+            </div>
+            <p>Un portefeuille mobile pensé pour simplifier les paiements du quotidien au Congo, développé avec des partenaires agréés.</p>
+            <ul>
+              <li>Envoyer et recevoir de l'argent simplement</li>
+              <li>Payer chez les commerçants</li>
+              <li>Une interface claire, en français, aux couleurs du Congo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approche" style="padding-top: 0">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">Notre approche</span>
+          <h2>Construire pour ici, avec les gens d'ici.</h2>
+        </div>
+        <div class="values">
+          <div class="value">
+            <span class="num">01</span>
+            <h3>Adapté au Congo</h3>
+            <p>Le téléphone comme identifiant, le Mobile Money, les adresses avec point de repère : nos produits partent des réalités locales.</p>
+          </div>
+          <div class="value">
+            <span class="num">02</span>
+            <h3>La confiance d'abord</h3>
+            <p>Paiements protégés, vendeurs vérifiés, données sécurisées : la confiance se gagne dans les détails.</p>
+          </div>
+          <div class="value">
+            <span class="num">03</span>
+            <h3>Simple et léger</h3>
+            <p>Des applications rapides, qui fonctionnent même avec une connexion modeste et sur tous les téléphones Android.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="about">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">À propos</span>
+          <h2>Une entreprise congolaise, née à Brazzaville.</h2>
+          <p>ZA Technology est une jeune entreprise technologique (en cours d'immatriculation) qui conçoit, développe et exploite ses propres plateformes numériques. Notre ambition : donner aux commerçants et aux familles congolaises des outils à la hauteur des meilleurs, conçus pour leur réalité.</p>
+        </div>
+        <blockquote class="quote">
+          « CHANTAL porte le prénom de la maman du fondateur. Chaque produit que nous créons est fait avec le même soin que pour les nôtres. »
+          <small>— Le fondateur de ZA Technology</small>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">Contact</span>
+          <h2>Vous êtes commerçant, partenaire ou investisseur ?</h2>
+          <p>Écrivez-nous sur WhatsApp : nous répondons rapidement, en français.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-wa" href="https://wa.me/242068826646?text=Bonjour%20ZA%20Technology%20!" target="_blank" rel="noopener">WhatsApp : +242 06 882 66 46</a>
+          <a class="btn btn-ghost" href="tel:+242068826646">Appeler</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year">2026</span> ZA Technology · Brazzaville, République du Congo</span>
+      <nav>
+        <a href="https://vps-2102ecb0.vps.ovh.ca/legal/confidentialite">Confidentialité (CHANTAL)</a>
+        <a href="https://vps-2102ecb0.vps.ovh.ca/legal/cgu">Conditions d'utilisation (CHANTAL)</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
