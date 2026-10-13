@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ZA Technology — Solutions numériques au Congo</title>
-  <meta name="description" content="ZA Technology conçoit à Brazzaville des applications pensées pour le Congo : CHANTAL, le commerce en direct, et BENI, le portefeuille mobile.">
+  <meta name="description" content="ZA Technology conçoit à Brazzaville des applications pensées pour le Congo : CHANTAL, le commerce en direct, ALVOZ, la gestion des boulangeries, et BENI, le portefeuille mobile.">
   <meta property="og:title" content="ZA Technology">
   <meta property="og:description" content="Des solutions numériques pensées pour le Congo.">
   <meta property="og:image" content="assets/og-za.png">
@@ -83,7 +83,7 @@
     h2 { font-size: clamp(28px, 3.6vw, 40px); line-height: 1.15; font-weight: 800; margin: 12px 0 14px; letter-spacing: -.01em; }
     .head p { color: var(--muted); font-size: 17px; margin: 0; }
 
-    .products { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
     .product { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; display: flex; flex-direction: column; gap: 18px; }
     .product-top { display: flex; align-items: center; gap: 16px; }
     .product-top img, .beni-icon { width: 64px; height: 64px; border-radius: 18px; flex: none; }
@@ -98,6 +98,8 @@
     .product li::before { content: ""; flex: none; width: 8px; height: 8px; margin-top: 8px; border-radius: 50%; background: var(--gold); }
     .product.chantal { border-top: 4px solid var(--red); }
     .product.beni { border-top: 4px solid var(--green); }
+    .product.alvoz { border-top: 4px solid #E0A030; }
+    .product.alvoz .tag { background: #FFF4D6; color: #6B3F1D; }
 
     .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .value { padding: 28px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); }
@@ -169,7 +171,7 @@
       <div class="wrap">
         <div class="head">
           <span class="eyebrow">Nos produits</span>
-          <h2>Deux applications, un même objectif : faciliter le quotidien.</h2>
+          <h2>Des applications, un même objectif : faciliter le quotidien.</h2>
           <p>Chaque produit part d'un vrai besoin local et se construit avec ses premiers utilisateurs.</p>
         </div>
         <div class="products">
@@ -187,6 +189,22 @@
               <li>Live Shopping : produit épinglé, offres LIVE à durée limitée</li>
               <li>Paiement MTN Mobile Money, Airtel Money ou à la livraison</li>
               <li>Argent protégé jusqu'à la livraison, avis vérifiés</li>
+            </ul>
+          </article>
+          <article class="product alvoz">
+            <div class="product-top">
+              <img src="img/alvoz.png" alt="Icône ALVOZ" width="64" height="64">
+              <div>
+                <h3>ALVOZ</h3>
+                <span class="tag tag-live">● Boulangerie · Pâtisserie</span>
+              </div>
+            </div>
+            <p>L'application de gestion d'une boulangerie, sur ordinateur et téléphone, avec une appli pour que les clients commandent leur pain et leurs gâteaux.</p>
+            <ul>
+              <li>Caisse rapide, ticket imprimé ou envoyé sur WhatsApp</li>
+              <li>Production du jour conseillée, stock et recettes</li>
+              <li>Commandes en ligne, retrait ou livraison, fidélité</li>
+              <li>Bénéfice, rapports du mois et caméras de la boutique</li>
             </ul>
           </article>
           <article class="product beni">
